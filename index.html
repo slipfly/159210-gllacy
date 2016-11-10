@@ -8,8 +8,8 @@
 <body>
 
 <header class="main-header">
-  <div class="container">
-    <nav class="main-navigator">
+  <div class="container clearfix">
+    <nav class="main-navigation">
       <ul>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Доставка и оплата</a></li>
@@ -17,36 +17,52 @@
       </ul>
     </nav>
     <div class="user-block">
-      <a class="search" href="#">Поиск</a>
-      <a class="login" href="#">Вход</a>
-      <a class="cart" href="#">Пусто</a>
+      <div class="cart-block user-block-item">
+        <img class="cart-icon" src="">
+        <a class="cart" href="#">Пусто</a>
+      </div>
+      <div class="login-block user-block-item">
+        <img class="login-icon" src="">
+        <a class="login" href="#">Вход</a>
+      </div>
+      <div class="search-block user-block-item">
+        <a class="search" href="#">Поиск</a>
+      </div>
     </div>
-  </div>
-  <div class="work-info">
-    <span class="opening-hours">С 10 до 20, ежедневно</span>
-    <span class="phone-number">8 812 450-25-25</span>
   </div>
 </header>
 
 <main class="container">
-  <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-  <button class="get-both-btn">Давайте оба!</button>
+
+  <div class="index-main-top">
+    <div class="work-info">
+      <span class="opening-hours">С 10 до 20, ежедневно</span> <br>
+      <span class="phone-number">8 812 450-25-25</span>
+    </div>
+  </div>
 
   <div class="special-offers">
-    <article class="left-offer index-block">
-      <h2>Малинка даром!</h2>
-      <p>
-        При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-      </p>
-      <button class="want-it-now">Хочу варенье!</button>
-    </article>
-    <article class="left-offer index-block">
-      <h2>Шоколадки даром!</h2>
-      <p>
-        При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-      </p>
-      <button class="want-it-now">Хочу шоколадки!</button>
-    </article>
+    <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+    <div class="slider-and-promobtn">
+      <button class="get-both-btn">Давайте оба!</button>
+    </div>
+
+    <div class="offers clearfix">
+      <article class="left-offer index-block offer-block">
+        <h2>Малинка даром!</h2>
+        <p>
+          При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+        </p>
+        <button class="want-it-now">Хочу варенье!</button>
+      </article>
+      <article class="right-offer index-block offer-block">
+        <h2>Шоколадки даром!</h2>
+        <p>
+          При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+        </p>
+        <button class="want-it-now">Хочу шоколадки!</button>
+      </article>
+    </div>
   </div>
 
   <div class="hit-offers">
@@ -54,8 +70,11 @@
       <a href="#">
         <div class="hit-item-img">
           <img src="img/index-ice1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <div class="hit-hit">
+            <img src="img/index-hit-mark.png" alt="hit">
+          </div>
         </div>
-        <img src="img/index-hit-mark.png" alt="hit">
+
         <div class="hit-price">310 &#8381;/кг</div>
         <span class="hit-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
       </a>
@@ -64,8 +83,10 @@
       <a href="#">
         <div class="hit-item-img">
           <img src="img/index-ice2.png" alt="Сливочно-кофейное с кусочками шоколада">
+          <div class="hit-hit">
+            <img src="img/index-hit-mark.png" alt="hit">
+          </div>
         </div>
-        <img src="img/index-hit-mark.png" alt="hit">
         <div class="hit-price">380 &#8381;/кг</div>
         <span class="hit-name">Сливочно-кофейное с кусочками шоколада</span>
       </a>
@@ -74,8 +95,10 @@
       <a href="#">
         <div class="hit-item-img">
           <img src="img/index-ice3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <div class="hit-hit">
+            <img src="img/index-hit-mark.png" alt="hit">
+          </div>
         </div>
-        <img src="img/index-hit-mark.png" alt="hit">
         <div class="hit-price">355 &#8381;/кг</div>
         <span class="hit-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
       </a>
@@ -84,71 +107,76 @@
       <a href="#">
         <div class="hit-item-img">
           <img src="img/index-ice4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+          <div class="hit-hit">
+            <img src="img/index-hit-mark.png" alt="hit">
+          </div>
         </div>
-        <img src="img/index-hit-mark.png" alt="hit">
         <div class="hit-price">415 &#8381;/кг</div>
         <span class="hit-name">Сливочное крем-брюле с карамельной подливкой</span>
       </a>
     </article>
   </div>
 
-  <div class="index-seo index-block">
-    <span class="index-disclaimer">
+  <div class="index-seo">
+    <p class="index-disclaimer">
       Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
-    </span>
+    </p>
 
-    <div class="disclaimer-left-col">
+    <div class="disclaimer-cols clearfix">
+      <div class="disclaimer-left-col">
 
-      <div class="index-disclaimer-item">
-        <p class="disclaimer-item-text">
-          Все наше мороженое изготавливается на собственном производстве, с использованием современного
-          оборудования и проверенных временем технологий.
-        </p>
+        <div class="index-disclaimer-item">
+          <div class="disclaimer-item-icon">icon</div>
+          <p class="disclaimer-item-text">
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного
+            оборудования и проверенных временем технологий.
+          </p>
+        </div>
+
+        <div class="index-disclaimer-item">
+          <div class="disclaimer-item-icon">icon</div>
+          <p class="disclaimer-item-text">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+            ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          </p>
+        </div>
+
       </div>
 
-      <div class="index-disclaimer-item">
-        <img src="http://placehold.it/150x100" alt="disclaimer-item-icon">
-        <p class="disclaimer-item-text">
-          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-          ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-        </p>
+      <div class="disclaimer-right-col">
+
+        <div class="index-disclaimer-item">
+          <div class="disclaimer-item-icon">icon</div>
+          <p class="disclaimer-item-text">
+            Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+            связывает долговременное сотрудничество.
+          </p>
+        </div>
+
+        <div class="index-disclaimer-item">
+          <div class="disclaimer-item-icon">icon</div>
+          <p class="disclaimer-item-text">
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+            мороженому растаять в пути и позволяет сохранить превосходный вкус.
+          </p>
+        </div>
+
       </div>
-
-    </div>
-
-    <div class="disclaimer-right-col">
-
-      <div class="index-disclaimer-item">
-        <img src="http://placehold.it/150x100" alt="disclaimer-item-icon">
-        <p class="disclaimer-item-text">
-          Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-          связывает долговременное сотрудничество.
-        </p>
-      </div>
-
-      <div class="index-disclaimer-item">
-        <img src="http://placehold.it/150x100" alt="disclaimer-item-icon">
-        <p class="disclaimer-item-text">
-          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
-          мороженому растаять в пути и позволяет сохранить превосходный вкус.
-        </p>
-      </div>
-
     </div>
   </div>
 
-  <div class="news-and-distribution">
+  <div class="news-and-distribution clearfix">
 
     <div class="index-news index-block">
-      <span class="news-head">Новое в нашем блоге</span>
+      <div class="news-head">Новое в нашем блоге</div>
       <span><a class="news-short" href="#">10  способов сервировки фруктовых щербетов к столу</a></span>
     </div>
 
     <div class="index-distribution  index-block">
-      <span class="distribution-text">
+      <div class="distribution-text">
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
-      </span>
+      </div>
       <form class="distribution-form" action="#" method="post">
         <input class="distribution-input" type="email" placeholder="Электронная почта">
         <button class="distribution-btn" type="submit">Отправить</button>
@@ -157,34 +185,34 @@
 
   </div>
 
-  <div class="index-map">
-    <div class="index-address index-block">
-      <div class="address-descript">
-        Адрес главного офиса и офлайн магазина:
-      </div>
-      <div class="address-and-phone">
-        ул. Большая Конюшенная 19/8, Санкт-Петербург
-      </div>
-      <div class="address-descript">
-        Для заказов по телефону:
-      </div>
-      <div class="address-and-phone">
-        8 812 450-25-25
-      </div>
-      <div class="address-descript">
-        (с 10 до 20 ежедневно)
-      </div>
-      <a class="feedback-form" href="#">
-        Форма обратной связи
-      </a>
-    </div>
-  </div>
-
 </main>
+
+<div class="index-map">
+  <div class="index-address index-block">
+    <div class="address-descript">
+      Адрес главного офиса и офлайн магазина:
+    </div>
+    <div class="address-and-phone">
+      ул. Большая Конюшенная 19/8, Санкт-Петербург
+    </div>
+    <div class="address-descript">
+      Для заказов по телефону:
+    </div>
+    <div class="address-and-phone">
+      8 812 450-25-25
+    </div>
+    <div class="address-descript descript2">
+      (с 10 до 20 ежедневно)
+    </div>
+    <a class="feedback-form" href="#">
+      Форма обратной связи
+    </a>
+  </div>
+</div>
 
 <footer class="main-footer">
 
-  <div class="container">
+  <div class="container clearfix">
 
     <section class="footer-social">
       <a class="social-btn social-btn-tw" href="#">Твиттер</a>
@@ -193,7 +221,7 @@
       <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
     </section>
 
-    <section class="footer-about">
+    <section class="footer-about clearfix">
       <div class="footer-about-left">
         <a href="#">Для поставщиков</a><br>
         <a href="#">О производстве</a>
