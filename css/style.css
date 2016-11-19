@@ -1326,18 +1326,18 @@ body.catalog h2 {
 }
 
 .items {
-  margin-left: 10px;
+  /*margin-left: 10px;*/
   margin-bottom: 30px;
 }
 
 .ice-cream {
   /*outline: 1px solid darkviolet;*/
   float: left;
-  padding-top: 10px;
+  padding: 10px 10px 0px;
   width: 200px;
-  height: 290px;
   margin-bottom: 16px;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
+  border-radius: 5px;
 }
 
 .ice-cream:nth-child(4n) {
@@ -1378,6 +1378,8 @@ body.catalog h2 {
 .ice-cream a {
   color: #ffffff;
   text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
 
 /*.ice-cream a .name:hover {*/
@@ -1718,30 +1720,6 @@ body.catalog h2 {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.hover-ice-cream {
-  position: absolute;
-  top: 346px;
-  left: 50%;
-  padding: 10px;
-  width: 200px;
-  height: 345px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hover-ice-cream a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.hover-btn-look {
-  font-size: 18px;
-  line-height: 24px;
-  margin-top: 76px;
-  padding: 10px 15px;
-}
-
 .cart-content {
   position: absolute;
   top: 60px;
@@ -1838,4 +1816,17 @@ body.catalog h2 {
 .cart-content-footer {
   float: right;
   width: 190px;
+}
+
+.ice-cream-btn-hover {
+  padding: 10px 15px;
+  visibility: hidden;
+}
+
+.ice-cream:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ice-cream:hover .ice-cream-btn-hover {
+  visibility: visible;
 }
