@@ -295,16 +295,19 @@ body > input[type="radio"] {
 #slider1:checked ~ .bg {
   background-color: #849d8f;
   background-image: url("../img/index-2-ice-1.png");
+  background-repeat: no-repeat;
 }
 
 #slider2:checked ~ .bg {
   background-color: #8996a6;
   background-image: url("../img/index-2-ice-2.png");
+  background-repeat: no-repeat;
 }
 
 #slider3:checked ~ .bg {
   background-color: #9d8b84;
   background-image: url("../img/index-2-ice-3.png");
+  background-repeat: no-repeat;
 }
 
 #slider1:checked ~ .bg .container .special-offers .slider-wrapper label[for="slider1"],
@@ -1061,7 +1064,7 @@ body.catalog h2 {
 
 .sort-by .sub-menu {
   position: absolute;
-  /*display: none;*/
+  visibility: hidden;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1484,7 +1487,7 @@ body.catalog h2 {
 }
 
 .modal-content-feedback {
-  /*display: none;*/
+  visibility: hidden;
   position: fixed;
   top: 340px;
   left: 50%;
@@ -1555,7 +1558,7 @@ body.catalog h2 {
 }
 
 .modal-content-login {
-  /*display: none;*/
+  visibility: hidden;
   position: absolute;
   top: 60px;
   left: 50%;
@@ -1601,7 +1604,7 @@ body.catalog h2 {
 }
 
 .modal-content-search {
-  /*display: none;*/
+  visibility: hidden;
   position: absolute;
   top: 60px;
   left: 50%;
@@ -1673,7 +1676,7 @@ body.catalog h2 {
 
 .main-navigator-catalog .index-sub-menu {
   position: absolute;
-  /*display: none;*/
+  visibility: hidden;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1710,7 +1713,7 @@ body.catalog h2 {
 }
 
 .modal-overlay {
-  display: none;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -1722,6 +1725,7 @@ body.catalog h2 {
 
 .cart-content {
   position: absolute;
+  visibility: hidden;
   top: 60px;
   left: 50%;
   background: #f8f7f4;
