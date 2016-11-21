@@ -1062,7 +1062,7 @@ body.catalog h2 {
   color: #ffffff;
 }
 
-.sort-by .sub-menu {
+.sub-menu {
   position: absolute;
   visibility: hidden;
   margin: 0;
@@ -1081,6 +1081,7 @@ body.catalog h2 {
 .sort-by > li:active {
   background: #ffffff;
   color: #343434;
+  cursor: pointer;
 }
 
 .custom label {
@@ -1631,28 +1632,6 @@ body.catalog h2 {
   position: relative;
 }
 
-.main-navigator-catalog .index-sub-menu-important {
-
-}
-
-.index-sub-menu-important::after {
-  content: "";
-  position: absolute;
-  right: 10px;
-  left: 10px;
-  height: 1px;
-  background-color: #d1d0ce;
-}
-
-.main-navigator-catalog .index-sub-menu-common {
-
-}
-
-.main-navigator-catalog .index-sub-menu-common:last-child {
-
-}
-
-
 .main-navigation .main-navigator-catalog {
   padding: 0px;
   margin: 0px;
@@ -1661,22 +1640,55 @@ body.catalog h2 {
 .main-navigator-catalog a {
   display: block;
   color: #343434;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
-.main-navigator-catalog .index-sub-menu-important a {
+.index-catalog-list .index-sub-menu-important::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  left: 10px;
+  top: 37px;
+  height: 1px;
+  background-color: #d1d0ce;
+}
+
+.index-catalog-list .index-sub-menu-important a {
   padding: 10px 20px;
   font-weight: 700;
 }
 
-.main-navigator-catalog .index-sub-menu-common a {
+.index-catalog-list .index-sub-menu-important {
+  margin-bottom: 5px;
+}
+
+.index-catalog-list .index-sub-menu-common {
+
+}
+
+.index-catalog-list .index-sub-menu-common:last-child {
+
+}
+
+.index-catalog-list {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  visibility: hidden;
+  margin-left: -265px;
+}
+
+.index-catalog-list .index-sub-menu-common a {
   padding: 8px 20px;
   font-weight: normal;
 }
 
-.main-navigator-catalog .index-sub-menu {
-  position: absolute;
-  visibility: hidden;
+.index-catalog-list ul {
+
+}
+
+.index-sub-menu {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1690,25 +1702,27 @@ body.catalog h2 {
   width: 145px;
 }
 
-.main-navigator-catalog .index-sub-menu li {
+.index-catalog-list .index-sub-menu li {
   font-size: 14px;
   line-height: 16px;
 }
 
-.main-navigator-catalog .index-sub-menu>li:hover {
+.index-catalog-list .index-sub-menu>li:hover {
   background: #fbded8;
 }
 
-.main-navigator-catalog .index-sub-menu a:hover {
+.index-catalog-list .index-sub-menu a:hover {
   background: none;
   width:105px;
 }
 
-.main-navigator-catalog .index-sub-menu a {
-
+.index-catalog-list .index-sub-menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: #343434;
 }
 
-.main-navigator-catalog > li:active .index-sub-menu {
+.index-catalog-list > li:active .index-sub-menu {
   display: block;
 }
 
@@ -1833,4 +1847,102 @@ body.catalog h2 {
 
 .ice-cream:hover .ice-cream-btn-hover {
   visibility: visible;
+}
+
+.modal-show {
+  visibility: visible;
+}
+
+.animat-for-login-form {
+  animation-name: scale-login;
+  animation-duration: 0.5s;
+}
+
+.animat-for-search-form {
+  animation-name: scale-search;
+  animation-duration: 0.5s;
+}
+
+.animat-for-catalog-list {
+  animation-name: scale-catalog-list;
+  animation-duration: 0.5s;
+}
+
+.animat-for-feedback-form {
+  animation-name: scale-feedback-form;
+  animation-duration: 0.5s;
+}
+
+.animat-for-cart-full {
+  animation-name: scale-cart;
+  animation-duration: 0.5s;
+}
+
+.animat-for-sort-list {
+  animation-name: scale-sort-list;
+  animation-duration: 0.5s;
+}
+
+@keyframes scale-login {
+  0% {
+    transform: translate(150px,-100px) scale(0, 0);
+
+  }
+  100% {
+    transform: translate(0px,0px) scale(1, 1);
+
+  }
+}
+
+@keyframes scale-search {
+  0% {
+    transform: translate(150px,-30px) scale(0, 0);
+
+  }
+  100% {
+    transform: translate(0px,0px) scale(1, 1);
+
+  }
+}
+
+@keyframes scale-catalog-list {
+  0% {
+    transform: translateY(-80px) scaleY(0);
+
+  }
+  100% {
+    transform: translateY(0px) scaleY(1);
+
+  }
+}
+
+@keyframes scale-feedback-form {
+  0% {
+    transform: translate(150px,150px) scale(0, 0);
+
+  }
+  100% {
+    transform: translate(0px,0px) scale(1, 1);
+
+  }
+}
+
+@keyframes scale-cart {
+  0% {
+    transform: translate(250px,-120px) scale(0, 0);
+  }
+  100% {
+    transform: translate(0px,0px) scale(1, 1);
+  }
+}
+
+@keyframes scale-sort-list {
+  0% {
+    transform: translateY(-50px) scaleY(0);
+
+  }
+  100% {
+    transform: translateY(0px) scaleY(1);
+
+  }
 }
