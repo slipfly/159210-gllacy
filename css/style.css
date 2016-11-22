@@ -765,7 +765,7 @@ body > input[type="radio"] {
   width: 880px;
   margin-left: auto;
   margin-right: auto;
-  background: url("../img/map.jpg");
+  /*background: url("../img/map.jpg");*/
   padding: 0 10px;
   padding-top: 63px;
 }
@@ -774,6 +774,7 @@ body > input[type="radio"] {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .index-map::before {
@@ -788,7 +789,8 @@ body > input[type="radio"] {
 }
 
 .index-address {
-  float: right;
+  position: absolute;
+  right: 10px;
   width: 255px;
   height: 251px;
   padding-left: 25px;
@@ -798,6 +800,7 @@ body > input[type="radio"] {
   color: #323232;
   border-radius: 15px;
   font-weight: 700;
+  z-index: 2;
 }
 
 .address-descript {
