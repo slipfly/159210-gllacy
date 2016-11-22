@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Gllacy</title>
@@ -12,8 +12,8 @@
     <header class="main-header clearfix">
       <div class="container clearfix">
         <nav class="main-navigation">
-          <a class="to-main" href="#">
-            <img src="img/Logo.svg" alt="На главную">
+          <a class="to-main" href="index.html">
+            <img src="img/logo.svg" alt="На главную" width="153" height="63">
           </a>
           <ul>
             <li class="main-navigator-item">
@@ -30,6 +30,45 @@
         <div class="user-block">
           <div class="cart-block user-block-item">
             <a class="header-btn header-btn-cart cart-full" href="#">2 товара</a>
+
+            <form class="cart-content">
+              <div class="cart-table-block">
+                <table class="cart-table">
+                  <tr>
+                    <td class="td-delete">
+                      <a class="cart-delete" href="#">X</a>
+                    </td>
+                    <td class="td-img"><img src="img/catalog-cart-ice1.png" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
+                    <td class="td-ice-name">Пломбир с апельсиновым джемом</td>
+                    <td class="td-quantity-price">
+                      <div class="cart-item-quantity">1,5 кг</div>
+                      <span>x</span>
+                      <div class="cart-item-price">200 руб.</div>
+                    </td>
+                    <td class="td-amount">300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="td-delete">
+                      <a class="cart-delete" href="#">X</a>
+                    </td>
+                    <td class="td-img"><img src="img/catalog-cart-ice2.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
+                    <td class="td-ice-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="td-quantity-price">
+                      <div class="cart-item-quantity">1,5 кг</div>
+                      <span>x</span>
+                      <div class="cart-item-price">300 руб.</div>
+                    </td>
+                    <td class="td-amount">450 руб.</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="cart-content-footer">
+                <div class="cart-amount">Итого: 750 руб.</div>
+
+                <button class="distribution-btn cart-content-btn" type="submit">Оформить заказ</button>
+              </div>
+            </form>
+
           </div>
           <div class="login-block user-block-item">
             <a class="header-btn header-btn-login" href="#">Вход</a>
@@ -68,13 +107,6 @@
         <div class="custom">
           <div class="custom-sort-by">
             <label>Сортировка:</label><br>
-            <!--<select name="sort-by" id="sort-by">-->
-              <!--<option value="by-popular">по популярности</option>-->
-              <!--<option value="cheap-first">сначала недорогие</option>-->
-              <!--<option value="expensive-first">сначала дорогие</option>-->
-              <!--<option value="by-fat-content">по жирности</option>-->
-            <!--</select>-->
-
             <ul class="sort-by">
               <li>по популярности
                 <ul class="sub-menu">
@@ -95,8 +127,6 @@
             <span> руб. - </span>
             <span class="custom-max-price">500</span>
             <span> руб.</span>
-            <!--<input type="range" min="0" max="400" step="1" value="100">-->
-            <!--<input type="range" min="400" max="800" step="1" value="500">-->
             <div class="price-range-bg"></div>
             <div class="price-range-bar-empty"></div>
             <div class="price-range-bar-full"></div>
@@ -107,7 +137,7 @@
 
         <div class="custom">
           <div class="custom-fat-content">
-            <label for="fat-content-list">Жирность:</la>
+            <span>Жирность:</span>
             <ul class="fat-content-list" id="fat-content-list">
               <li>
                 <input type="radio" name="fat-content" id="0" value="0">
@@ -131,7 +161,7 @@
 
         <div class="custom">
           <div class="custom-flavour">
-            <label for="flavour-list">Наполнители:</label>
+            <span>Наполнители:</span>
             <ul class="flavour-list" id="flavour-list">
               <li>
                 <input type="checkbox" name="chocolade" id="chocolade" checked>
@@ -165,7 +195,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/catalog-ice1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="200" height="200">
                 <div class="price">310</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -180,7 +210,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice2.png" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/catalog-ice2.png" alt="Сливочно-кофейное с кусочками шоколада" width="200" height="200">
                 <div class="price">380</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -195,7 +225,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/catalog-ice3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="200" height="200">
                 <div class="price">355</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -210,7 +240,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/catalog-ice4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="200" height="200">
                 <div class="price">415</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -227,7 +257,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice5.png" alt="Сливочное с брусничным джемом">
+                <img src="img/catalog-ice5.png" alt="Сливочное с брусничным джемом" width="200" height="200">
                 <div class="price">325</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -242,7 +272,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice6.png" alt="Сливочно-черничное с цельными ягодами черники">
+                <img src="img/catalog-ice6.png" alt="Сливочно-черничное с цельными ягодами черники" width="200" height="200">
                 <div class="price">410</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -257,7 +287,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice7.png" alt="Сливочно-лимонное с карамельной присыпкой">
+                <img src="img/catalog-ice7.png" alt="Сливочно-лимонное с карамельной присыпкой" width="200" height="200">
                 <div class="price">375</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -272,7 +302,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice8.png" alt="Сливочное с шоколадной стружкой">
+                <img src="img/catalog-ice8.png" alt="Сливочное с шоколадной стружкой" width="200" height="200">
                 <div class="price">320</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -289,7 +319,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice9.png" alt="Сливочно-ванильное с кусочками шоколада">
+                <img src="img/catalog-ice9.png" alt="Сливочно-ванильное с кусочками шоколада" width="200" height="200">
                 <div class="price">440</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -304,7 +334,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice10.png" alt="Сливочноe с ментоловым сиропом">
+                <img src="img/catalog-ice10.png" alt="Сливочноe с ментоловым сиропом" width="200" height="200">
                 <div class="price">435</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -319,7 +349,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice11.png" alt="Сливочное с кусочками черного шоколада">
+                <img src="img/catalog-ice11.png" alt="Сливочное с кусочками черного шоколада" width="200" height="200">
                 <div class="price">355</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -334,7 +364,7 @@
           <article class="ice-cream">
             <a href="#">
               <div class="catalog-ice-pic">
-                <img src="img/catalog-ice12.png" alt="Сливочное с мятным сиропом">
+                <img src="img/catalog-ice12.png" alt="Сливочное с мятным сиропом" width="200" height="200">
                 <div class="price">420</div>
                 <div class="value">&#8381;</div>
                 <div class="measure">/кг</div>
@@ -374,14 +404,14 @@
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         </section>
 
-        <section class="footer-about">
+        <section class="footer-about clearfix">
           <div class="footer-about-left">
-            <a href="#">Для поставщиков</a><br>
-            <a href="#">О производстве</a>
+            <a class="bold" href="#">Для поставщиков</a>
+            <a class="thin" href="#">О производстве</a>
           </div>
           <div class="footer-about-right">
-            <a href="#">Наши документы</a><br>
-            <a href="#">Экологические стандарты</a>
+            <a class="thin" href="#">Наши документы</a>
+            <a class="thin" href="#">Экологические стандарты</a>
           </div>
         </section>
 
@@ -394,43 +424,7 @@
 
     </footer>
 
-    <form class="cart-content">
-      <div class="cart-table-block">
-        <table class="cart-table">
-          <tr>
-            <td class="td-delete">
-              <a class="cart-delete" href="#">X</a>
-            </td>
-            <td class="td-img"><img src="img/catalog-cart-ice1.png"></td>
-            <td class="td-ice-name">Пломбир с апельсиновым джемом</td>
-            <td class="td-quantity-price">
-              <div class="cart-item-quantity">1,5 кг</div>
-              <span>x</span>
-              <div class="cart-item-price">200 руб.</div>
-            </td>
-            <td class="td-amount">300 руб.</td>
-          </tr>
-          <tr>
-            <td class="td-delete">
-              <a class="cart-delete" href="#">X</a>
-            </td>
-            <td class="td-img"><img src="img/catalog-cart-ice2.png"></td>
-            <td class="td-ice-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td class="td-quantity-price">
-              <div class="cart-item-quantity">1,5 кг</div>
-              <span>x</span>
-              <div class="cart-item-price">300 руб.</div>
-            </td>
-            <td class="td-amount">450 руб.</td>
-          </tr>
-        </table>
-      </div>
-      <div class="cart-content-footer">
-        <div class="cart-amount">Итого: 750 руб.</div>
 
-        <button class="distribution-btn cart-content-btn" type="submit">Оформить заказ</button>
-      </div>
-    </form>
 
   </div>
 

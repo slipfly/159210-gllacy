@@ -2,17 +2,17 @@
  * Created by null on 20.11.2016.
  */
 
-if (document.querySelector(".cart-content")) {
-  //переменные для содержимого корзины
-  var cartContent = document.querySelector(".cart-content");
-  var cartFullBtn = document.querySelector(".cart-full");
-
-  cartFullBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    cartContent.classList.toggle("modal-show");
-    cartContent.classList.toggle("animat-for-cart-full");
-  });
-}
+// if (document.querySelector(".cart-content")) {
+//   //переменные для содержимого корзины
+//   var cartContent = document.querySelector(".cart-content");
+//   var cartFullBtn = document.querySelector(".cart-full");
+//
+//   cartFullBtn.addEventListener("click", function (event) {
+//     event.preventDefault();
+//     cartContent.classList.toggle("modal-show");
+//     cartContent.classList.toggle("animat-for-cart-full");
+//   });
+// }
 
 if (document.querySelector(".sort-by")) {
   //переменные для сортировки в каталоге
@@ -121,14 +121,14 @@ if (document.querySelector(".modal-overlay")) {
   });
 }
 
-if (document.querySelector(".main-navigator-catalog .main-navigator-link")) {
-  //переменные для выпадающего списка в хэдере
-  var catalogContextBtn = document.querySelector(".main-navigator-catalog .main-navigator-link");
-  var catalogContextList = document.querySelector(".index-catalog-list");
-
-  catalogContextBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    catalogContextList.classList.toggle("modal-show");
-    catalogContextList.classList.toggle("animat-for-catalog-list");
-  });
-}
+// if (document.querySelector(".main-navigator-catalog .main-navigator-link")) {
+//   //переменные для выпадающего списка в хэдере
+//   var catalogContextBtn = document.querySelector(".main-navigator-catalog .main-navigator-link");
+//   var catalogContextList = document.querySelector(".index-catalog-list");
+//
+//   catalogContextBtn.addEventListener("click", function (event) {
+//     event.preventDefault();
+//     catalogContextList.classList.toggle("modal-show");
+//     catalogContextList.classList.toggle("animat-for-catalog-list");
+//   });
+// }

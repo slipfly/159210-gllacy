@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Gllacy</title>
@@ -17,22 +17,38 @@
       <div class="container clearfix">
         <nav class="main-navigation">
           <div class="to-main">
-            <img src="img/Logo.svg" alt="На главную">
+            <img src="img/logo.svg" alt="На главную" width="153" height="63">
           </div>
-          <ul>
+          <ul class="main-navigator-catalog">
+
             <li class="main-navigator-item">
-              <ul class="main-navigator-catalog">
-                <li>
-                  <a class="main-navigator-link" href="#">Каталог</a>
-                </li>
-              </ul>
+              <a class="main-navigator-link" href="catalog.html">Каталог</a>
+                <ul class="index-sub-menu">
+                  <li class="index-sub-menu-common">
+                    <a href="#">Новинки</a>
+                  </li>
+                  <li class="index-sub-menu-common">
+                    <a href="#">Сливочное</a>
+                  </li>
+                  <li class="index-sub-menu-common">
+                    <a href="#">Щербеты</a>
+                  </li>
+                  <li class="index-sub-menu-common">
+                    <a href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="index-sub-menu-common">
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
             </li>
+
             <li class="main-navigator-item">
               <a class="main-navigator-link" href="#">Доставка и оплата</a>
             </li>
             <li class="main-navigator-item">
               <a class="main-navigator-link" href="#">О Компании</a>
             </li>
+
           </ul>
         </nav>
         <div class="user-block">
@@ -41,6 +57,19 @@
           </div>
           <div class="login-block user-block-item">
             <a class="header-btn header-btn-login" href="#">Вход</a>
+
+            <div class="modal-content-login">
+              <form class="login-form" action="#" method="post">
+                <input class="login-form-email" type="email" placeholder="Электронная почта">
+                <input class="login-form-password" type="password" placeholder="Пароль">
+                <button class="distribution-btn login-btn" type="submit">Войти</button>
+                <div class="login-form-other">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
+
           </div>
           <div class="search-block user-block-item">
             <a class="header-btn header-btn-search" href="#">Поиск</a>
@@ -112,16 +141,16 @@
             </div>
           </article>
         </div>
-      </>
+      </div>
 
       <div class="hit-offers">
 
         <article class="hit-item">
           <a href="#">
             <div class="hit-item-img">
-              <img src="img/index-ice1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <img src="img/index-ice1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="200" height="200">
               <div class="hit-hit">
-                <img src="img/index-hit-mark.png" alt="hit">
+                <img src="img/index-hit-mark.png" alt="hit" width="61" height="61">
               </div>
               <div class="hit-price">310</div>
               <div class="hit-value">&#8381;</div>
@@ -134,9 +163,9 @@
         <article class="hit-item">
           <a href="#">
             <div class="hit-item-img">
-              <img src="img/index-ice2.png" alt="Сливочно-кофейное с кусочками шоколада">
+              <img src="img/index-ice2.png" alt="Сливочно-кофейное с кусочками шоколада" width="200" height="200">
               <div class="hit-hit">
-                <img src="img/index-hit-mark.png" alt="hit">
+                <img src="img/index-hit-mark.png" alt="hit" width="61" height="61">
               </div>
               <div class="hit-price">380</div>
               <div class="hit-value">&#8381;</div>
@@ -149,9 +178,9 @@
         <article class="hit-item">
           <a href="#">
             <div class="hit-item-img">
-              <img src="img/index-ice3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <img src="img/index-ice3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="200" height="200">
               <div class="hit-hit">
-                <img src="img/index-hit-mark.png" alt="hit">
+                <img src="img/index-hit-mark.png" alt="hit" width="61" height="61">
               </div>
               <div class="hit-price">355</div>
               <div class="hit-value">&#8381;</div>
@@ -164,9 +193,9 @@
         <article class="hit-item">
           <a href="#">
             <div class="hit-item-img">
-              <img src="img/index-ice4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+              <img src="img/index-ice4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="200" height="200">
               <div class="hit-hit">
-                <img src="img/index-hit-mark.png" alt="hit">
+                <img src="img/index-hit-mark.png" alt="hit" width="61" height="61">
               </div>
               <div class="hit-price">415</div>
               <div class="hit-value">&#8381;</div>
@@ -325,37 +354,9 @@
 
     </div>
 
-    <div class="index-catalog-list">
-      <ul class="index-sub-menu">
-        <li class="index-sub-menu-important">
-          <a href="#">Новинки</a>
-        </li>
-        <li class="index-sub-menu-common">
-          <a href="#">Сливочное</a>
-        </li>
-        <li class="index-sub-menu-common">
-          <a href="#">Щербеты</a>
-        </li>
-        <li class="index-sub-menu-common">
-          <a href="#">Фруктовый лед</a>
-        </li>
-        <li class="index-sub-menu-common">
-          <a href="#">Мелорин</a>
-        </li>
-      </ul>
-    </div>
 
-    <div class="modal-content-login">
-      <form class="login-form" action="#" method="post">
-        <input class="login-form-email" type="email" placeholder="Электронная почта">
-        <input class="login-form-password" type="password" placeholder="Пароль">
-        <button class="distribution-btn login-btn" type="submit">Войти</button>
-        <div class="login-form-other">
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </div>
-      </form>
-    </div>
+
+
 
     <div class="modal-content-search">
       <form class="search" action="#" method="post">
