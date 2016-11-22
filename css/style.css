@@ -122,6 +122,11 @@ h2 {
   /*text-decoration: none;*/
 }
 
+.main-navigator-catalog li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .header-btn {
   position: relative;
   display: inline-block;
@@ -143,6 +148,10 @@ h2 {
 .header-btn:hover {
   background: #ffffff;
   color: #373737;
+}
+
+.user-block-item {
+  padding: 5px 0;
 }
 
 .login-block:hover .modal-content-login {
@@ -759,6 +768,12 @@ body > input[type="radio"] {
   background: url("../img/map.jpg");
   padding: 0 10px;
   padding-top: 63px;
+}
+
+.map-script {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .index-map::before {
@@ -1559,7 +1574,7 @@ input[type="checkbox"]:checked + label::after {
 .modal-content-login {
   visibility: hidden;
   position: absolute;
-  top: 60px;
+  top: 65px;
   left: 50%;
   margin-left: 25px;
   width: 240px;
@@ -1605,7 +1620,7 @@ input[type="checkbox"]:checked + label::after {
 .modal-content-search {
   visibility: hidden;
   position: absolute;
-  top: 60px;
+  top: 65px;
   left: 50%;
   margin-left: -140px;
   width: 310px;
@@ -1626,7 +1641,9 @@ input[type="checkbox"]:checked + label::after {
   width: 290px;
 }
 
-
+.search-block:hover .modal-content-search {
+  visibility: visible;
+}
 
 .main-navigator-item {
   position: relative;
@@ -1634,6 +1651,7 @@ input[type="checkbox"]:checked + label::after {
 
 .main-navigator-item li {
   display: block;
+
 }
 
 .index-sub-menu {
@@ -1647,10 +1665,12 @@ input[type="checkbox"]:checked + label::after {
   border-radius: 5px;
   width: 145px;
   padding-left: 0px;
+
 }
 
 .main-navigator-catalog > li:hover .index-sub-menu {
   display: block;
+
 }
 
 .index-sub-menu li {
@@ -1717,7 +1737,7 @@ input[type="checkbox"]:checked + label::after {
 .cart-content {
   position: absolute;
   visibility: hidden;
-  top: 60px;
+  top: 65px;
   left: 50%;
   background: #f8f7f4;
   color: #333333;
@@ -1865,6 +1885,10 @@ input[type="checkbox"]:checked + label::after {
   animation-duration: 0.5s;
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
+
 @keyframes scale-login {
   0% {
     transform: translate(150px,-100px) scale(0, 0);
@@ -1927,4 +1951,10 @@ input[type="checkbox"]:checked + label::after {
     transform: translateY(0px) scaleY(1);
 
   }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
 }

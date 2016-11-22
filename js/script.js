@@ -38,6 +38,7 @@ if (document.querySelector(".modal-overlay")) {
     event.preventDefault();
     loginForm.classList.toggle("modal-show");
     loginForm.classList.toggle("animat-for-login-form");
+    loginForm.classList.remove("modal-error");
     if (storage) {
       loginLogin.value = storage;
       loginPassword.focus();
@@ -49,7 +50,7 @@ if (document.querySelector(".modal-overlay")) {
   loginForm.addEventListener("submit", function (event) {
     if (!loginLogin.value || !loginPassword.value) {
       event.preventDefault();
-      console.log("111");
+      loginForm.classList.add("modal-error");
     } else {
       localStorage.setItem("login", loginLogin.value);
       loginForm.classList.remove("modal-show");
@@ -84,12 +85,13 @@ if (document.querySelector(".modal-overlay")) {
     modalFeedbackForm.classList.remove("modal-show");
     modalOverlay.classList.remove("modal-show");
     modalFeedbackForm.classList.remove("animat-for-feedback-form");
+    modalFeedbackForm.classList.remove("modal-error");
   });
 
   modalForm.addEventListener("submit", function(event) {
     if (!modalName.value || !modalEmail.value || !modalFeedbackText.value) {
       event.preventDefault();
-      console.log("111");
+      modalFeedbackForm.classList.add("modal-error");
     } else {
       modalFeedbackForm.classList.remove("modal-show");
       modalOverlay.classList.remove("modal-show");

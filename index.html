@@ -73,6 +73,14 @@
           </div>
           <div class="search-block user-block-item">
             <a class="header-btn header-btn-search" href="#">Поиск</a>
+
+            <div class="modal-content-search">
+              <form class="search" action="#" method="post">
+                <input class="search-form-search" type="text" placeholder="Что ищем?">
+                <button class="distribution-btn search-btn" type="submit">Найти</button>
+              </form>
+            </div>
+
           </div>
         </div>
       </div>
@@ -279,6 +287,12 @@
     </main>
 
     <div class="index-map">
+
+      <div class="map-script">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3iVvTyqPkUefhXqZ47mjDnVF91619BWA&amp;width=900&amp;height=429&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+      </div>
+
+
       <div class="index-address index-block">
         <div class="address-descript">
           Адрес главного офиса и офлайн магазина:
@@ -350,20 +364,8 @@
       </form>
     </div>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay"></div>
 
-    </div>
-
-
-
-
-
-    <div class="modal-content-search">
-      <form class="search" action="#" method="post">
-        <input class="search-form-search" type="text" placeholder="Что ищем?">
-        <button class="distribution-btn search-btn" type="submit">Найти</button>
-      </form>
-    </div>
   </div>
 
   <script src="js/script.js"></script>
