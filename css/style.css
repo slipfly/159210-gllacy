@@ -834,7 +834,7 @@ body > input[type="radio"] {
   background: #ed5b3d;
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 27px;
+  padding: 10px 25px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -1355,7 +1355,8 @@ input[type="checkbox"]:disabled:checked + label::after {
 
 .custom-btn {
   float: right;
-  padding: 7px 28px;
+  width: 140px;
+  padding: 7px 21px;
   background-color: #abbcb2;
   border: 2px solid #ffffff;
   border-radius: 18px;
