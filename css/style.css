@@ -100,7 +100,6 @@ h2 {
   vertical-align: top;
   font-size: 16px;
   line-height: 18px;
-  vertical-align: middle;
 }
 
 .main-navigation .to-main {
@@ -725,6 +724,7 @@ body > input[type="radio"] {
 }
 
 .distribution-input {
+  width: 176px;
   padding: 10px;
   border-radius: 5px;
 }
@@ -1214,6 +1214,14 @@ input[type="radio"] + label {
   cursor: pointer;
 }
 
+input[type="radio"]:disabled + label {
+  display: block;
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
 input[type="radio"] + label::before {
   content: "";
   width: 18px;
@@ -1332,9 +1340,10 @@ input[type="checkbox"]:checked + label::after {
   background-position: -330px -10px;
 }
 
-input[type="checkbox"]:checked + label::after {
+input[type="checkbox"]:disabled:checked + label::after {
   content: "";
   position: absolute;
+  opacity: 0.4;
   width: 12px;
   height: 12px;
   top: 4px;
@@ -1381,6 +1390,7 @@ input[type="checkbox"]:checked + label::after {
 
 .ice-cream {
   display: inline-block;
+  position: relative;
   vertical-align: top;
   padding: 10px 8px 0px;
   width: 200px;
@@ -1866,6 +1876,7 @@ input[type="checkbox"]:checked + label::after {
 
 .ice-cream:hover {
   background: rgba(255, 255, 255, 0.3);
+  z-index: 10;
 }
 
 .ice-cream:hover .ice-cream-btn-hover {
